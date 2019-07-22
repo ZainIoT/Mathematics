@@ -2,18 +2,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width,initial-scale=1">
         <meta charset="UTF-8">
-
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>数学</title>
         <!-- 作者信息 -->
         <meta name="author" content="ZainIoT">
-
         <!-- 主题 -->
-        <!-- <link rel="stylesheet" href="//unpkg.com/docsify/themes/vue.css"> -->
-        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-defaults.css"> -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
         <link rel="stylesheet" href="theme-custom.css">
+        <!-- <link rel="stylesheet" href="//unpkg.com/docsify/themes/vue.css"> -->
+        <!-- LaTex公式显示 -->
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
     </head>
     <body>
         <div id="app">loading...</div>
@@ -29,6 +28,7 @@
             themeColor: '#0B87DA',
 
             search: {
+                namespace: 'website-1',
                 noData: {       // 没有搜索结果时
                     // '/zh-cn/': '没有结果!',
                     '/': '没有结果!',// No results!
@@ -38,7 +38,7 @@
                     // '/zh-cn/': '搜索',
                     '/': '搜索',// Search
                 },
-                namespace: 'website-1',
+                
             },
 
             // markdown: function(marked, renderer) {
@@ -46,11 +46,6 @@
 
             //     return marked
             // },
-
-            themeable: {
-                responsiveTables: true, // default
-                readyTransition: true, // 加载等待指示符
-            },
 
             tabs: {// 插件
                 persist: true,      // 确定在页面刷新/重新访问之后是否还原选项卡选择。
@@ -61,26 +56,40 @@
                 tabHeadings: true,  // 确定是否可以使用标题 + 粗体标记来定义选项卡集中的选项卡。
             },
 
-            // docsify-copy-code (defaults)
+            themeable: {
+                responsiveTables: true, // default
+                readyTransition: true, // 加载等待指示符
+            },
+
+            // docsify-copy-code
             copyCode: {// 插件
                 buttonText : '点击复制',
                 errorText  : 'Error',
                 successText: '复制成功',
             },
+
+            // 翻页按钮
+            pagination: {
+                previousText: 'PREVIOUS',
+                nextText: 'NEXT',
+                crossChapter: true
+            },
         }
         </script>
+        <script src="//unpkg.com/docsify"></script>
+        <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+        <!-- Put them above docsify.min.js -->
+            <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+            <script src="//unpkg.com/docsify/lib/plugins/external-script.js"></script>
+            <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
         <!-- themeable一项对应的索引 -->
             <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0"></script>
-        <!-- Put them above docsify.min.js -->
-            <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-            <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
         <!-- 复制到剪贴板 -->
             <script src="//unpkg.com/docsify-copy-code"></script>
-        <!-- 上一页、下一页 -->
+        <!-- 翻页按钮 -->
             <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
         <!-- 高亮代码块 -->
         <!-- 支持的语法高亮列表查询链接：https://github.com/PrismJS/prism/tree/gh-pages/components -->
-            <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
             <script src="//unpkg.com/prismjs/components/prism-c.js"></script>
             <script src="//unpkg.com/prismjs/components/prism-c.min.js"></script>
             <script src="//unpkg.com/prismjs/components/prism-cpp.js"></script>
@@ -91,7 +100,6 @@
             <!-- CDN files for docsify-katex -->
             <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
             <!-- or <script src="//cdn.jsdelivr.net/gh/upupming/docsify-katex@latest/dist/docsify-katex.js"></script> -->
-            <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
         <!-- 像表格一样，显示多个文件 -->
             <!-- https://jhildenbiddle.github.io/docsify-tabs/#/ -->
             <!-- docsify (latest v4.x.x)-->
