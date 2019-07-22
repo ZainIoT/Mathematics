@@ -89,10 +89,10 @@
 ============================================================================= */
 :root {
     /* Tab blocks */
-    --docsifytabs-border-color    : ;
-    --docsifytabs-border-radius-px: ;
+    /* --docsifytabs-border-color    : ;
+    --docsifytabs-border-radius-px: ; */
 
     /* Tabs */
-    --docsifytabs-tab-background  : ;
-    --docsifytabs-tab-color       : ;
+    /* --docsifytabs-tab-background  : ;
+    --docsifytabs-tab-color       : ;  */
 }
