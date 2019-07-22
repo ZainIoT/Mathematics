@@ -1,0 +1,116 @@
+/* Base
+Theme properties for base styles.
+基本样式的主题属性。
+============================================================================= */
+:root {
+    --base-background-color: #fff;
+    --base-color           : var(--mono-shade2);
+    --base-font-family     : -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --base-font-size       : 16px;
+    --base-font-weight     : normal;
+    --base-letter-spacing  : ;
+    --base-line-height     : 1.7;
+
+    /* Emoji */
+    --emoji-size           : calc(var(--base-line-height) * 1em);
+
+    /* Horizontal Rule */
+    --hr-border            : 1px solid var(--mono-tint2);
+
+    /* Mark */
+    --mark-background      : #ffecb3;
+    --mark-color           : ;
+
+    /* Preformatted */
+    --pre-font-family      : var(--code-font-family);
+    --pre-font-size        : var(--code-font-size);
+    --pre-font-weight      : normal;
+    --pre-line-height      : ;
+
+    /* Selection */
+    --selection-color      : #b4d5fe;
+
+    /* Small */
+    --small-font-size      : var(--font-size-s);
+
+    /* Strong */
+    --strong-color         : var(--heading-color);
+    --strong-font-weight   : 600;
+
+    /* Sub/Sup */
+    --subsup-font-size     : var(--font-size-s);
+}
+
+/* Plugin: Copy Code
+============================================================================= */
+:root {
+    --copycode-background: #b6b6b6;
+    --copycode-color     : rgb(0, 0, 0);
+}
+
+/* Plugin: Search
+============================================================================= */
+:root {
+    --search-background                      : ;
+    --search-margin                          : 1.5rem 0 0;
+    --search-padding                         : ;
+
+    /* Clear Button */
+    --search-clear-icon-color1               : ;
+    --search-clear-icon-color2               : ;
+
+    /* Input */
+    --search-input-background-color          : ;
+    --search-input-background-color--focus   : ;
+    --search-input-background-image          : ;
+    --search-input-background-image--focus   : ;
+    --search-input-background-position       : ;
+    --search-input-background-position--focus: ;
+    --search-input-background-repeat         : no-repeat;
+    --search-input-background-size           : ;
+    --search-input-background-size--focus    : ;
+    --search-input-border-color              : var(--mono-tint1);
+    --search-input-border-radius             : ;
+    --search-input-border-width              : 1px;
+    --search-input-color                     : ;
+    --search-input-font-size                 : ;
+    --search-input-margin                    : ;
+    --search-input-padding                   : 0.5em;
+    --search-input-placeholder-color         : ;
+    --search-input-transition                : ;
+
+    /* Order */
+    --search-flex-order                      : 1;
+
+    /* Results */
+    --search-result-heading-color            : var(--heading-color);
+    --search-result-heading-font-size        : var(--base-font-size);
+    --search-result-heading-font-weight      : normal;
+    --search-result-heading-margin           : 0 0 0.25em;
+    --search-result-item-border-color        : var(--mono-tint2);
+    --search-result-item-border-style        : solid;
+    --search-result-item-border-width        : 0 0 1px 0;
+    --search-result-item-color               : ;
+    --search-result-item-font-size           : ;
+    --search-result-item-font-weight         : normal;
+    --search-result-item-margin              : ;
+    --search-result-item-padding             : 1em 0;
+    --search-result-keyword-background       : var(--mark-background);
+    --search-result-keyword-border-radius    : var(--border-radius-s);
+    --search-result-keyword-color            : var(--mark-color);
+    --search-result-keyword-font-weight      : normal;
+    --search-result-keyword-margin           : 0 0.1em;
+    --search-result-keyword-padding          : 0.2em 0;
+}
+
+/* Plugin: Docsify Tabs
+============================================================================= */
+:root {
+    /* Tab blocks */
+    --docsifytabs-border-color    : var(--mono-tint2);
+    --docsifytabs-border-radius-px: var(--border-radius-s);
+
+    /* Tabs */
+    --docsifytabs-tab-background  : var(--mono-tint3);
+    --docsifytabs-tab-color       : var(--mono-tint1);
+}
