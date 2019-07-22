@@ -24,8 +24,22 @@
             homepage: 'index.md',       // 网站首页
             loadSidebar: 'SUMMARY.md',   // 侧边栏目录文件
             subMaxLevel: 3,              // md文件的三级以上标题显示在侧边栏
-            auto2top: true, 
+            auto2top: true,              // 当路线改变时滚动到屏幕顶部
+            maxLevel: 4,                 // 最大内容级别表
             themeColor: '#0B87DA',
+
+            search: {
+                noData: {       // 没有搜索结果时
+                    // '/zh-cn/': '没有结果!',
+                    '/': '没有结果!',// No results!
+                },
+                paths: 'auto',  // 搜索路径
+                placeholder: {  // 占位符
+                    // '/zh-cn/': '搜索',
+                    '/': '搜索',// Search
+                },
+                namespace: 'website-1',
+            },
 
             // markdown: function(marked, renderer) {
             //     // ...
@@ -52,17 +66,6 @@
                 buttonText : '点击复制',
                 errorText  : 'Error',
                 successText: '复制成功',
-            },
-            search: {
-                noData: {       // 没有搜索结果时
-                    // '/zh-cn/': '没有结果!',
-                    '/': '没有结果!',// No results!
-                },
-                paths: 'auto',  // 搜索路径
-                placeholder: {  // 占位符
-                    // '/zh-cn/': '搜索',
-                    '/': '搜索',// Search
-                },
             },
         }
         </script>
