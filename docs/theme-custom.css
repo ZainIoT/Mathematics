@@ -115,7 +115,7 @@ Theme properties for base styles.
     --content-max-width                 : 55em;
 
     /* 引用 */
-    --blockquote-background             : var(--mono-tint3);
+    /* --blockquote-background             : var(--mono-tint3);
     --blockquote-border-color           : ;
     --blockquote-border-style           : solid;
     --blockquote-border-width           : ;
@@ -133,10 +133,10 @@ Theme properties for base styles.
     --blockquote-quotes-color           : ;
     --blockquote-quotes-font-family     : ;
     --blockquote-quotes-font-size       : ;
-    --blockquote-quotes-open            : ;
+    --blockquote-quotes-open            : ; */
 
     /* 代码块 */
-    --code-font-family                  : Inconsolata, Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+    /* --code-font-family                  : Inconsolata, Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
     --code-font-size                    : calc(var(--font-size-m) * 0.95);
     --code-font-weight                  : normal;
     --code-tab-size                     : 4;
@@ -144,10 +144,10 @@ Theme properties for base styles.
     --code-block-border-radius          : var(--border-radius-m);
     --code-block-line-height            : var(--base-line-height);
     --code-block-margin                 : 1em 0;
-    --code-block-padding                : 1.75em 1.5em 1.5em 1.5em;
+    --code-block-padding                : 1.75em 1.5em 1.5em 1.5em; */
 
     /* 行内代码 */
-    --code-inline-background            : var(--code-theme-background);
+    /* --code-inline-background            : var(--code-theme-background);
     --code-inline-border-radius         : var(--border-radius-s);
     --code-inline-color                 : var(--code-theme-text);
     --code-inline-margin                : 0 0.15em;
@@ -163,16 +163,16 @@ Theme properties for base styles.
     --code-theme-selector               : ;
     --code-theme-tag                    : ;
     --code-theme-text                   : ;
-    --code-theme-variable               : ;
+    --code-theme-variable               : ; */
 
     /* 标题1-6 */
-    --heading-color                     : var(--mono-shade3);
+    /* --heading-color                     : var(--mono-shade3);
     --heading-font-family               : ;
     --heading-font-weight               : ;
     --heading-margin                    : 2.5rem 0 0;
     --heading-padding                   : ;
     --heading-h1-border-color           : ;
-    --heading-h1-border-style           : solid;
+    --heading-h1-border-style           : none;
     --heading-h1-border-width           : ;
     --heading-h1-color                  : ;
     --heading-h1-font-family            : ;
@@ -181,7 +181,7 @@ Theme properties for base styles.
     --heading-h1-margin                 : ;
     --heading-h1-padding                : ;
     --heading-h2-border-color           : ;
-    --heading-h2-border-style           : solid;
+    --heading-h2-border-style           : none;
     --heading-h2-border-width           : ;
     --heading-h2-color                  : ;
     --heading-h2-font-family            : ;
@@ -190,7 +190,7 @@ Theme properties for base styles.
     --heading-h2-margin                 : ;
     --heading-h2-padding                : ;
     --heading-h3-border-color           : ;
-    --heading-h3-border-style           : solid;
+    --heading-h3-border-style           : none;
     --heading-h3-border-width           : ;
     --heading-h3-color                  : ;
     --heading-h3-font-family            : ;
@@ -199,7 +199,7 @@ Theme properties for base styles.
     --heading-h3-margin                 : ;
     --heading-h3-padding                : ;
     --heading-h4-border-color           : ;
-    --heading-h4-border-style           : solid;
+    --heading-h4-border-style           : none;
     --heading-h4-border-width           : ;
     --heading-h4-color                  : ;
     --heading-h4-font-family            : ;
@@ -209,7 +209,7 @@ Theme properties for base styles.
     --heading-h4-padding                : ;
 
     --heading-h5-border-color           : ;
-    --heading-h5-border-style           : solid;
+    --heading-h5-border-style           : none;
     --heading-h5-border-width           : ;
     --heading-h5-color                  : ;
     --heading-h5-font-family            : ;
@@ -219,37 +219,37 @@ Theme properties for base styles.
     --heading-h5-padding                : ;
 
     --heading-h6-border-color           : ;
-    --heading-h6-border-style           : solid;
+    --heading-h6-border-style           : none;
     --heading-h6-border-width           : ;
     --heading-h6-color                  : ;
     --heading-h6-font-family            : ;
     --heading-h6-font-size              : var(--font-size-xs);
     --heading-h6-font-weight            : ;
     --heading-h6-margin                 : ;
-    --heading-h6-padding                : ;
+    --heading-h6-padding                : ; */
 
     /* Keyboard */
-    --kbd-background                    : var(--mono-tint3);
+    /* --kbd-background                    : var(--mono-tint3);
     --kbd-border                        : ;
     --kbd-border-radius                 : var(--border-radius-m);
     --kbd-color                         : ;
     --kbd-font-size                     : ;
     --kbd-margin                        : 0 0.3em;
     --kbd-min-width                     : 2.5em;
-    --kbd-padding                       : 0.65em 0.5em;
+    --kbd-padding                       : 0.65em 0.5em; */
 
     /* 链接 */
-    --link-border-bottom                : ;
+    /* --link-border-bottom                : ;
     --link-border-bottom--hover         : ;
     --link-color                        : ;
     --link-color--hover                 : ;
     --link-text-decoration              : underline;
     --link-text-decoration--hover       : ;
     --link-text-decoration-color        : ;
-    --link-text-decoration-color--hover : ;
+    --link-text-decoration-color--hover : ; */
 
     /* 强调 */
-    --notice-background                 : var(--mono-tint3);
+    /* --notice-background                 : var(--mono-tint3);
     --notice-border-color               : ;
     --notice-border-radius              : var(--border-radius-m);
     --notice-border-style               : solid;
@@ -257,10 +257,10 @@ Theme properties for base styles.
     --notice-color                      : ;
     --notice-font-family                : ;
     --notice-font-weight                : normal;
-    --notice-padding                    : 1em 1.5em;
+    --notice-padding                    : 1em 1.5em; */
 
     /* Notice - Pseudo */
-    --notice-before-background          : ;
+    /* --notice-before-background          : ;
     --notice-before-border-radius       : ;
     --notice-before-color               : ;
     --notice-before-content             : ;
@@ -274,51 +274,51 @@ Theme properties for base styles.
     --notice-before-padding             : ;
     --notice-before-position            : ;
     --notice-before-top                 : ;
-    --notice-before-width               : ;
+    --notice-before-width               : ; */
 
     /* Notice - Important */
-    --notice-important-background       : ;
+    /* --notice-important-background       : ;
     --notice-important-border-color     : ;
     --notice-important-border-style     : ;
     --notice-important-border-width     : ;
-    --notice-important-color            : ;
+    --notice-important-color            : ; */
 
     /* Notice - Important Pseudo */
-    --notice-important-before-background: ;
+    /* --notice-important-before-background: ;
     --notice-important-before-color     : ;
-    --notice-important-before-content   : ;
+    --notice-important-before-content   : ; */
 
     /* Notice - Tip */
-    --notice-tip-background             : ;
+    /* --notice-tip-background             : ;
     --notice-tip-border-color           : ;
     --notice-tip-border-style           : ;
     --notice-tip-border-width           : ;
-    --notice-tip-color                  : ;
+    --notice-tip-color                  : ; */
 
     /* Notice - Tip Pseudo */
-    --notice-tip-before-background      : ;
+    /* --notice-tip-before-background      : ;
     --notice-tip-before-color           : ;
-    --notice-tip-before-content         : ;
+    --notice-tip-before-content         : ; */
 
     /* 表 */
-    --table-body-border-color           : ;
-    --table-body-border-width           : ;
-    --table-cell-border-color           : rgb(170, 170, 170);
-    --table-cell-border-width           : 1;
-    --table-cell-padding                : 0.75em 0.5em;
-    --table-head-background             : ;
-    --table-head-border-color           : var(--table-cell-border-color);
-    --table-head-border-width           : ;
+    --table-head-background             : #E6E6FA;
+    --table-head-border-color           : ;
+    --table-head-border-width           : 1px;
     --table-head-font-weight            : var(--strong-font-weight);
+    --table-body-border-color           : ;
+    --table-body-border-width           : 1px;
     --table-row-even-background         : ;
-    --table-row-odd-background          : var(--mono-tint3);
+    --table-row-odd-background          : #f7f7f7;
+    --table-cell-border-color           : ;
+    --table-cell-border-width           : ;
+    --table-cell-padding                : 0.75em 0.5em;
 }
 
 /* Plugin: Copy Code
 ============================================================================= */
 :root {
-    --copycode-background: #b6b6b6;
-    --copycode-color     : rgb(0, 0, 0);
+    --copycode-background: #888888;
+    --copycode-color     : #ffffff;
 }
 
 /* Plugin: Search
