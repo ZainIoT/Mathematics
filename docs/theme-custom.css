@@ -302,15 +302,15 @@ Theme properties for base styles.
 
     /* 表 */
     --table-head-background             : #E6E6FA;
-    --table-head-border-color           : ;
+    --table-head-border-color           : #cecece;
     --table-head-border-width           : 1px;
     --table-head-font-weight            : var(--strong-font-weight);
-    --table-body-border-color           : ;
+    --table-body-border-color           : #cecece;
     --table-body-border-width           : 1px;
-    --table-row-even-background         : ;
+    --table-row-even-background         : #ffffff;
     --table-row-odd-background          : #f7f7f7;
-    --table-cell-border-color           : ;
-    --table-cell-border-width           : ;
+    --table-cell-border-color           : #cecece;
+    --table-cell-border-width           : 1px;
     --table-cell-padding                : 0.75em 0.5em;
 }
 
