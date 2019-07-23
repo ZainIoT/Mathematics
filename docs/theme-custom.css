@@ -43,8 +43,3 @@
     --sidebar-toggle-offset-top                   : calc(35px - (var(--sidebar-toggle-height) / 2));
     --sidebar-toggle-width                        : 36px;
 }
-
-table th {
-    border-width    : 1px;
-    border-color    : #d60707;
-}
