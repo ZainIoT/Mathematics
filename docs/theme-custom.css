@@ -1,5 +1,6 @@
 table th {
-    border-width                : 1px;
+    border-width    : 1px;
+    border-color    : #d60707;
 }
 
 :root {
