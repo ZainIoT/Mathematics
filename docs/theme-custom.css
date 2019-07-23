@@ -46,5 +46,5 @@ table {
     --sidebar-toggle-icon-width                   : 16px;
     --sidebar-toggle-offset-left                  : 0;
     --sidebar-toggle-offset-top                   : calc(35px - (var(--sidebar-toggle-height) / 2));
-    --sidebar-toggle-width                        : 44px;
+    --sidebar-toggle-width                        : 36px;
 }
