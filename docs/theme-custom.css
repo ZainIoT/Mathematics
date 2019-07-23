@@ -1,3 +1,7 @@
+table {
+    display: inline-table;
+}
+
 :root {
     /* MarkDown相关属性
     ============================================================================= */
@@ -19,6 +23,7 @@
     --table-cell-border-color           : var(--table-border-color);
     --table-cell-border-width           : var(--table-border-width);
     --table-cell-padding                : 0.75em 0.5em;
+    
     
     /* 一键复制代码插件
     ============================================================================= */
