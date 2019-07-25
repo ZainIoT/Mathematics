@@ -136,15 +136,15 @@ $|f(X)| < M$
 
 ### 3. 局部保号性
 
-若$\lim \limits_{x \to x_0}f(x)=A>0$，则存在$\delta>0，当0<|x-x_0|<\delta$时，$f(x)>0$;
+若$\lim \limits_{x \to x_0}f(x)=A>0$，则存在$\delta>0$，当$0<|x-x_0|<\delta$时，$f(x)>0$;
 
-若$\lim \limits_{x \to x_0}f(x)=A<0$，则存在$\delta>0，当0<|x-x_0|<\delta$时，$f(x)<0$。
+若$\lim \limits_{x \to x_0}f(x)=A<0$，则存在$\delta>0$，当$0<|x-x_0|<\delta$时，$f(x)<0$。
 
 ---
 
 <div style='color: #2b73af'>
 
-【例】设$\lim \limits_{x \to 0}f(x)=f(0)$，且$$\lim \limits_{x \to 0}\frac{f(x)}{1-\cos x}=-2$，则$x=0$是___。
+【例】设$\lim \limits_{x \to 0}f(x)=f(0)$，且$\lim \limits_{x \to 0}\frac{f(x)}{1-\cos x}=-2$，则$x=0$是___。
 
 </div>
 
@@ -165,20 +165,9 @@ $|f(X)| < M$
 
 ∴$x=0$是极大值点
 
-## 三、计算1
+## 三、计算
 
 $\begin{cases}
 1.函数极限（常规考法） \\
 2.数列极限（一般为非常规考法、重点题、压轴题）
 \end{cases}$
-
-```flow
-st=>start: 开始
-e=>end: 结束
-op=>operation: 操作
-cond=>condition: 确认？
-
-st->op->cond
-cond(yes)->e
-cond(no)->op
-```
