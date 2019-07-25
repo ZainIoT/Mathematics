@@ -167,7 +167,39 @@ $|f(X)| < M$
 
 ## 三、计算
 
-$\begin{cases}
-1.函数极限（常规考法） \\
+1.函数极限（常规考法）
+
 2.数列极限（一般为非常规考法、重点题、压轴题）
-\end{cases}$
+
+### 1. 函数的计算
+
+**（1）七种未定式（分三组）：**
+
+&emsp;A、$\frac00,\frac\infty\infty,\infty \cdot 0,$
+
+&emsp;B、$\infty-\infty,$
+
+&emsp;C、$\infty^0，0^0,1^\infty$
+
+**（2）计算工具：**
+
+&emsp;**A、洛必达法则：**
+
+&emsp;&emsp;若$\lim f(x)=0(\infty), \lim g(x)=0(\infty)$，且$\lim \frac{f'(x)}{g'(x)}$存在，则$\lim \frac{f(x)}{g(x)}=\lim \frac{f'(x)}{g'(x)}$
+
+&emsp;**B、等价无穷小替换：（$x \to 0$时）**
+
+$\sin x \sim \tan x \sim \arcsin x \sim \arctan x \sim e^x-1 \sim \ln(1+x) \sim x$
+
+$(1+x)^a-1 \sim ax$
+
+$1-\cos x \sim \frac12 $
+
+$a^x-1 \sim x\ln a$
+
+$x-\sin x \sim \frac16x^3$
+
+$x+\sin x \sim 2x$
+
+$x^2-\sin ^2 x \sim \frac13 x^4$
+
