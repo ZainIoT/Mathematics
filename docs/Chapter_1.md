@@ -1,10 +1,13 @@
 # 极限
 
-## 核心考点：
+## 核心考点
 
 （1）定义
+
 （2）性质
+
 （3）计算
+
 （4）应用
 
 ## 一、极限的定义
@@ -16,6 +19,8 @@ $\lim\limits_{x \to x_0}f(x)=A \Leftrightarrow \forall \varepsilon > 0, \exist \
 ### 2. 数列极限
 
 $\lim\limits_{x \to x_0}x_n=A \Leftrightarrow \forall \varepsilon > 0, \exist N > 0$，当$n > N$ 时，有 $|x_n-A| < \varepsilon$。
+
+---
 
 <div style='color: #2b73af'>
 
@@ -114,6 +119,65 @@ $|f(X)| < M$
 - [ ] <font style='color: #2b73af'>C.(1,2)</font>
 - [ ] <font style='color: #2b73af'>D.(2,3)</font>
 
-<font style='color: #cf455c'>【求解方法】</font>讨论
+【分析】对每个答案区间的左端点的+、右端点的-极限进行判断，若存在、且区间内函数连续，则为所求答案。
+
+<font style='color: #cf455c'>【求解方法】</font>讨论$f(x)$在指定区间$I$上的有界性，方法如下：
+
+①理论：连续函数在闭区间内必有界；
+
+②若$I$为$(a,b)$，则当一下三个条件均成立时，$f(x)$有界
+
+&emsp;A.$\lim \limits_{x \to a^+}f(x)$存在；
+
+&emsp;B.$\lim \limits_{x \to b^-}f(x)$存在；
+
+&emsp;C.$f(x)$在$(a,b)$内连续；
+
 
 ### 3. 局部保号性
+
+若$\lim \limits_{x \to x_0}f(x)=A>0$，则存在$\delta>0，当0<|x-x_0|<\delta$时，$f(x)>0$;
+
+若$\lim \limits_{x \to x_0}f(x)=A<0$，则存在$\delta>0，当0<|x-x_0|<\delta$时，$f(x)<0$。
+
+---
+
+<div style='color: #2b73af'>
+
+【例】设$\lim \limits_{x \to 0}f(x)=f(0)$，且$$\lim \limits_{x \to 0}\frac{f(x)}{1-\cos x}=-2$，则$x=0$是___。
+
+</div>
+
+- [x] <font style='color: #2b73af'>A.极大值点</font>
+- [ ] <font style='color: #2b73af'>B.极小值点</font>
+- [ ] <font style='color: #2b73af'>C.非极值点</font>
+- [ ] <font style='color: #2b73af'>D.无法判断</font>
+
+【分析】$f(0)=\lim \limits_{x \to 0}f(x)=\lim \limits_{x \to 0} \frac{f(x)}{1-\cos x}(1-\cos x)=-2 \times 0=0$
+
+∵$\lim \limits_{x \to 0} \frac{f(x)}{1-\cos x} = -2 <0$
+
+∴$\frac{f(x)}{1-\cos x}  <0$
+
+又$1-\cos x>0$
+
+∴$f(x)<0$
+
+∴$x=0$是极大值点
+
+## 三、计算
+
+$\begin{cases}
+1.函数极限（常规考法） \\
+2.数列极限（一般为非常规考法、重点题、压轴题）
+\end{cases}$
+
+```flow
+st=>start: 开始
+e=>end: 结束
+op=>operation: 操作
+cond=>condition: 确认？
+
+st->op->cond
+cond(yes)->e
+cond(no)->op
