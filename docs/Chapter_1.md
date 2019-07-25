@@ -30,12 +30,11 @@ $\lim\limits_{x \to x_0}x_n=A \Leftrightarrow \forall \varepsilon > 0, \exist N 
 正确的个数为（  ）
 
 </div>
-<span style='color: #2b73af'>
 
-- [ ] A.0
-- [ ] B.1
-- [ ] C.2
-- [x] D.3
+- [ ] <font style='color: #2b73af'>A.0</font>
+- [ ] <font style='color: #2b73af'>B.1</font>
+- [ ] <font style='color: #2b73af'>C.2</font>
+- [x] <font style='color: #2b73af'>D.3</font>
 
 ## 二、极限的性质
 
@@ -60,6 +59,8 @@ $$A - \varepsilon < f(x) < A + \varepsilon \\ B - \varepsilon < f(x) < B + \vare
 $$\frac{A+B}{2} < f(x) < \frac{3A-B}{2} \\ \frac{3B-A}{2} < f(x) < \frac{A+B}{2}$$
 
 所以 $\frac{3A-B}{2} = \frac{3B-A}{2}$,得$A=B$,这与假设$A \ne B$相违背，所以假设不成立，故A唯一。
+
+---
 
 <div style='color: #2b73af'>
 
@@ -100,16 +101,19 @@ $$\lim \limits_{x \to 0^-}(\frac{e^{\frac{1}{x}}-\pi}{e^{\frac{2}{x}}+1} + a\arc
 
 $|f(X)| < M$
 
+---
+
 <div style='color: #2b73af'>
 
 【例】$f(x)=\frac{|x|\sin(x+2)}{x(x-1)(x-2)^2}$，在（  ）内有界。
 
 </div>
-<span style='color: #2b73af'>
 
-- [x] A.(-1,0)
-- [ ] B.(0,1)
-- [ ] C.(1,2)
-- [ ] D.(2,3)
+- [x] <font style='color: #2b73af'>A.(-1,0)</font>
+- [ ] <font style='color: #2b73af'>B.(0,1)</font>
+- [ ] <font style='color: #2b73af'>C.(1,2)</font>
+- [ ] <font style='color: #2b73af'>D.(2,3)</font>
+
+<font style='color: #cf455c'>【求解方法】</font>讨论
 
 ### 3. 局部保号性
