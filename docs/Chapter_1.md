@@ -171,9 +171,9 @@ $|f(X)| < M$
 
 2.数列极限（一般为非常规考法、重点题、压轴题）
 
-### 1. 函数的计算
+### 1. 函数极限的计算
 
-**（1）七种未定式（分三组）：**
+#### （1）七种未定式（分三组）：
 
 &emsp;A、$\frac00,\frac\infty\infty,\infty \cdot 0,$
 
@@ -181,7 +181,7 @@ $|f(X)| < M$
 
 &emsp;C、$\infty^0，0^0,1^\infty$
 
-**（2）计算工具：**
+#### （2）计算工具：
 
 &emsp;**A、洛必达法则：**
 
@@ -189,17 +189,52 @@ $|f(X)| < M$
 
 &emsp;**B、等价无穷小替换：（$x \to 0$时）**
 
-$\sin x \sim \tan x \sim \arcsin x \sim \arctan x \sim e^x-1 \sim \ln(1+x) \sim x$
+&emsp;&emsp;$\sin x \sim \tan x \sim \arcsin x \sim \arctan x \sim e^x-1 \sim \ln(1+x) \sim x$
 
-$(1+x)^a-1 \sim ax$
+&emsp;&emsp;$(1+x)^a-1 \sim ax$
 
-$1-\cos x \sim \frac12 $
+&emsp;&emsp;$1-\cos x \sim \frac12 $
 
-$a^x-1 \sim x\ln a$
+&emsp;&emsp;$a^x-1 \sim x\ln a$
 
-$x-\sin x \sim \frac16x^3$
+&emsp;&emsp;$x-\sin x \sim \frac16x^3$
 
-$x+\sin x \sim 2x$
+&emsp;&emsp;$x+\sin x \sim 2x$
 
-$x^2-\sin ^2 x \sim \frac13 x^4$
+&emsp;&emsp;$x^2-\sin ^2 x \sim \frac13 x^4$
 
+&emsp;&emsp;$\tan x-x \sim \frac13 x^3$
+
+&emsp;**C、重要极限：**
+
+&emsp;&emsp;$\lim \limits_{x \to 0}  \frac{\sin x}{x}=1$
+
+&emsp;&emsp;$\lim \limits_{x \to 0}(1+x)^{\frac1x}=e$
+
+**<font style='color:#cf455c'>对于A类未定式:
+1、（$\frac00$）见式先化简：
+&emsp;①恒等变形
+&emsp;&emsp;A、见根号差，用有理化；
+&emsp;&emsp;B、提公因式；
+&emsp;&emsp;C、凑补法：+a-a、\*a/a；
+&emsp;②等价无穷小替换
+&emsp;③及时提出极限不为0的因式
+2、（$\infty \cdot 0$）转化为（$\infty \cdot \frac{1}{\frac{1}{0}}$或$0 \cdot \frac{1}{\frac{1}{\infty}}$）
+&emsp;&emsp;原则：将简单因式放在分母（如$x^a,e^{ax}$）,复杂因式如（$\ln x, \arcsin x$等）
+</font>**
+
+【例1】$\lim \limits_{x \rightarrow 0} \frac{\sqrt{1+\tan x}-\sqrt{1+\sin x}}{x \sqrt{1+\sin ^{2} x}-x}\left(\frac{0}{0}\right)$
+
+
+
+<font style='color: #cf455c'>【方法】</font>
+
+
+
+
+
+&emsp;**数列极限存在的判别方法**
+
+&emsp;&emsp;**单调有界定理**：单调增加（或单调减少）且有上界（或有下界）的数列$\{x_n\}$必有极限。
+
+&emsp;&emsp;**夹逼定理**：
