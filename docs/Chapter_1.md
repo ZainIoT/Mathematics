@@ -384,6 +384,90 @@ $=e^{-\sqrt2}$
 
 </div>
 
+#### （4）使用泰勒公式计算
+
+&emsp;任何可导函数$f(x)=\sum a_{n} x^{n}$（任何可导函数均可表示为幂函数的和的形式）
+
+&emsp;&emsp;$x \to 0 $时：
+
+&emsp;&emsp;$\mathrm{e}^{x}=1+x+\frac{x^{2}}{2 !}+\frac{x^{3}}{3 !}+o\left(x^{3}\right)$（非常重要）
+
+&emsp;&emsp;$\sin x=x-\frac{1}{3!} x^{3}+o\left(x^{3}\right)$
+
+&emsp;&emsp;$\arcsin x=x+\frac{1}{3!} x^{3}+o\left(x^{3}\right)$
+
+&emsp;&emsp;$\tan x=x+\frac{1}{\mathscr{3}} x^{3}+o\left(x^{3}\right)$
+
+&emsp;&emsp;$\arctan x=x-\frac{1}{3} x^{3}+o\left(x^{3}\right)$
+
+&emsp;&emsp;$\cos x=1-\frac{1}{2!} x^{2}+\frac{1}{4!} x^{4}+o\left(x^{4}\right)$
+
+&emsp;&emsp;$\ln (1+x)=x-\frac{x^{2}}{2}+\frac{x^{3}}{3}-\frac{x^{4}}{4}+o\left(x^{4}\right)$
+
+&emsp;&emsp;$\frac{1}{1-x}=1+x+x^{2}+x^{3}+o\left(x^{3}\right)(|x|<1)$
+
+&emsp;**A、见到$\frac{A}{B}$型，用上下同阶原则，即若分母为$x^k$，则分子泰勒展开到$k$次幂**
+
+<div style='color: #2b73af'>
+
+【例】$\lim \limits_{x \to 0} \frac{\arcsin x-\arctan x}{x^{3}}$
+
+【解】
+
+原式
+
+$=\lim \limits_{x \to 0} \frac{(x+\frac{1}{3!}x^3)-(x+\frac13 x^3)+o(x^3)}{x^3}$
+
+$=\frac16+\frac13=\frac12$
+
+</div>
+
+&emsp;**B、见到$A-B$型，用幂次最低原则，即将$A,B$分别展开至系数不想等的$x$的最低次幂为止**
+
+<div style='color: #2b73af'>
+
+【例1】当$x \to 0$时，$\cos x-e^{-\frac{x^2}{2}}$与$cx^k$为等价无穷小，求$c,k$。
+
+【分析】
+
+将$\cos x,\mathrm{e}^{-\frac{x^2}{2}}$分别展开
+
+$\cos x=1-\frac{1}{2!} x^{2}+\frac{1}{4!} x^{4}+o\left(x^{4}\right)$
+
+$\mathrm{e}^{-\frac{x^2}{2}}=1+(-\frac{x^2}{2})+\frac{(-\frac{x^2}{2})^{2}}{2 !}+o\left(x^{4}\right)$
+
+两者在$x^4$时，系数不相等
+
+∴ $\cos x-e^{-\frac{x^2}{2}}$
+
+$=1-\frac{1}{2!} x^{2}+\frac{1}{4!} x^{4}-[1+(-\frac{x^2}{2})+\frac{(-\frac{x^2}{2})^{2}}{2 !}]+o\left(x^{4}\right)$
+
+$=-\frac{1}{12}x^4+o(x^4)$
+
+∴ $\cos x-e^{-\frac{x^2}{2}} \sim -\frac{1}{12}x^4$
+
+∴ $c=-\frac{1}{12},k=4$
+
+---
+
+【例2】设$f(x)$在$x=0$的某领域内有定义，且$\lim \limits_{x \to 0} \frac{f(x) \tan x-\sin 4 x}{x^{3}}=0$，计算$\lim \limits_{x \to 0} \frac{f(x)-4}{x^{2}}$。
+
+【分析】$f(x)$在$x=0$的某领域内有定义，表示仅有定义，不确定其是否可求导
+
+$I=\lim \limits_{x \to 0} \frac{f(x)-4}{x^{2}}$
+
+$=\lim \limits_{x \to 0} \frac{f(x) \cdot \tan x-4\tan x}{x^{2} \cdot \tan x}$
+
+$=\lim \limits_{x \to 0} \frac{f(x) \cdot \tan x-4\tan x}{x^{3}}$
+
+∴ $I =I-0=\lim \limits_{x \to 0} \frac{f(x) \cdot \tan x-4\tan x}{x^{3}}-\lim \limits_{x \to 0} \frac{f(x) \tan x-\sin 4 x}{x^{3}}$
+
+$=\lim \limits_{x \to 0}\frac{\sin 4x -4 \tan x}{x^3}$<font style='color:#4d4d4d'>（上下幂同阶原则）</font>
+
+$=\lim \limits_{x \to 0}\frac{……}{x^3}=-12$<font style='color:#4d4d4d'>（可直接看3次幂的系数，求解即可）</font>
+
+</div>
+
 ### 2. 数列极限的计算
 
 #### （1）若数列$\{x_n\}$易于连续化，则可转为函数极限计算
@@ -426,22 +510,117 @@ $=e^{\frac13}$
 
 【例1】求$\lim _{n \rightarrow \infty}\left(\frac{1}{n^{2}+n+1}+\frac{2}{n^{2}+n+2}+\cdots+\frac{n}{n^{2}+n+n}\right)$
 
-【解】
+【分析】题中式子的通式为$\sum \limits_{i=1}^{n}\frac{i}{n^2+n+i}$（为分子分母同时变化）
 
-∵ $\lim\limits_{x \to +\infty}\left(x \cdot \tan \frac{1}{x}\right)^{x^{2}}(1^\infty)$
+∴ $\sum \limits_{i=1}^{n}\frac{\frac{n(n+1)}{2}}{n^2+n}<\sum \limits_{i=1}^{n}\frac{i}{n^2+n+i}<\sum \limits_{i=1}^{n}\frac{\frac{n(n+1)}{2}}{n^2+n+1}$
 
-$=e^{\lim \limits_{x \to +\infty}x^2(x \tan \frac1x -1)}$
+∵ $\sum \limits_{i=1}^{n}\frac{\frac{n(n+1)}{2}}{n^2+n}=\frac12$
 
-令$x=\frac1t$，则
+$\sum \limits_{i=1}^{n}\frac{\frac{n(n+1)}{2}}{n^2+n+1}=\frac12$
 
-$=e^{\lim \limits_{t \to 0^+}\frac1{t^2}(\frac1t \tan t-1)}$
+则由夹逼定理得
 
-$=e^{\lim \limits_{t \to 0^+}\frac1{t^2}\frac{\tan t-t}{t}}$<font style='color:#4d4d4d'>（等价无穷小替换：$\tan t-t \sim \frac13 t^3$）</font>
-
-$=e^{\lim \limits_{t \to 0^+}\frac{\frac13 t^3}{t^3}}$
-
-$=e^{\frac13}$
-
-由归结定理得，原式$=e^{\frac13}$
+$\sum \limits_{i=1}^{n}\frac{i}{n^2+n+i}=\frac12$
 
 </div>
+
+&emsp;**B、式中存在天生有界项时，利用该项的有界性**
+
+---
+
+<div style='color: #2b73af'>
+
+【例1】$\lim \limits_{n \rightarrow \infty} \sqrt[n]{n \arctan n}$
+
+【分析】式中，函数$\arctan x$的值域有界$(-\frac{\pi}2,\frac{\pi}2)$
+
+对于数列$\arctan n$，其值域为$[\frac{\pi}4,\frac{\pi}2)$
+
+∴ $(n\cdot \frac{\pi}4)^{1/n} \leqslant (n\cdot \arctan n)^{1/n} < (n\cdot \frac{\pi}2)^{1/n}$
+
+∵ $\lim \limits_{x \to \infty}(x \cdot a)^\frac1x(a=\frac{\pi}4、\frac{\pi}2)$
+
+$=\lim \limits_{x \to \infty}x^\frac1x \cdot a^\frac1x$
+
+$=\lim \limits_{x \to \infty}x^\frac1x$
+
+$=e^{\lim \limits_{x \to \infty}\frac1x \ln x}=e^{\lim \limits_{x \to \infty}\frac{\frac1x}{1}}=e^0=1$
+
+∴ 由夹逼定理得，原式=1
+
+</div>
+
+#### （3）若数列$\{x_n\}$由递推公式$x_n=f(x_{n-1})$给出，则用“单调有界定理”
+
+---
+
+<div style='color: #2b73af'>
+
+【例1】设$x_{1}=1, x_{n+1}=1+\frac{x_{n}}{1+x_{n}}(n=1,2, \cdots)$，求$\lim \limits_{n \to \infty} x_{n}$。
+
+【分析】先求证存在，再求极限！！！
+
+（①验证$n=1$时成立）当$x_1=1$时 ，$x_2=1+\frac{x_1}{1+x_1}=\frac32>x_1>0$
+
+（②设$n-1$时成立）设$x_n>_{n-1}>0$
+
+（③验证$n$时成立）则
+$x_{n+1}-x_n$
+
+$=(1+\frac{x_{n}}{1+x_{n}})-(1+\frac{x_{n-1}}{1+x_{n-1}})$
+
+$=\frac{x_n-x_{n-1}}{(1+x_n)(1+x_{n-1})}> 0$
+
+∴ $x_{n+1}>x_n>0$
+
+且$x_{n+1}=1+\frac{x_{n}}{1+x_{n}}<2$有上界
+
+∴ $\lim \limits_{n \to \infty}x_n =A$
+
+∴ $A=1+\frac{A}{1+A}$
+
+解得$A=\frac{1+\sqrt5}{2}$（负的舍去）
+
+∴ $\lim \limits_{n \to \infty} x_{n}=\frac{1+\sqrt5}{2}$
+
+</div>
+
+## 四、应用————连续与间断
+
+### 1.基本知识
+
+任何初等函数在其定义区间内连续（只要见到的函数都是初等函数），故考研中只研究两类特殊的点：
+
+&emsp;**分段函数的分段点（可能间断）**
+
+&emsp;**无定义点（必然间断）**
+
+### 2.连续的定义
+
+若$\lim \limits_{x \to x_{0}} f(x)=f\left(x_{0}\right)$，则$f(x)$在$x=x_0$处连续。
+
+【注】$\lim\limits _{x \to x_{0}^{+}} f(x)=\lim \limits_{x \to x_{0}^{-}} f(x)=f(x)$时，才连续。
+
+### 3.间断的定义
+
+设$f(x)$在$x=x_0$点的某去心邻域有定义
+
+(1)$\lim \limits_{x \to x_{0}^{+}} f(x)$
+
+(2)$\lim \limits_{x \to x_{0}^{-}} f(x)$
+
+(3)$f\left(x_{0}\right)$
+
+**a）第一类间断点**（1）,（2）均存在，且
+
+（1）≠（2）：$x_0$为跳跃间断点；
+
+（1）=（2）≠（3）：$x_0$为可去间断点。
+
+**b）第二类间断点**（1）,（2）至少一个不存在（目前为止考研只考了（1）（2）均不存在）
+
+若不存在 = $\infty$，$\Longrightarrow$无穷间断点；
+若不存在 = 振荡，$\Longrightarrow$振荡间断点。
+
+!> 【注】①单侧定义不讨论间断性；<br>
+②若出现左右一边是振荡间断，一边是无穷间断，则我们应该分侧讨论。
