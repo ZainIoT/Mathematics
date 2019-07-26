@@ -211,17 +211,26 @@ $|f(X)| < M$
 
 &emsp;&emsp;$\lim \limits_{x \to 0}(1+x)^{\frac1x}=e$
 
-**<font style='color:#cf455c'>对于A类未定式:
+<font style='color:#cf455c; font-weight:bold'>对于A类未定式:
+
 1、（$\frac00$）见式先化简：
+
 &emsp;①恒等变形
+
 &emsp;&emsp;A、见根号差，用有理化；
+
 &emsp;&emsp;B、提公因式；
+
 &emsp;&emsp;C、凑补法：+a-a、\*a/a；
+
 &emsp;②等价无穷小替换
+
 &emsp;③及时提出极限不为0的因式
+
 2、（$\infty \cdot 0$）转化为（$\infty \cdot \frac{1}{\frac{1}{0}}$或$0 \cdot \frac{1}{\frac{1}{\infty}}$）
+
 &emsp;&emsp;原则：将简单因式放在分母（如$x^a,e^{ax}$）,复杂因式如（$\ln x, \arcsin x$等）
-</font>**
+</font>
 
 <div style='color: #2b73af'>
 
