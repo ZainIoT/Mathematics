@@ -234,6 +234,8 @@ $|f(X)| < M$
 &emsp;&emsp;原则：将简单因式放在分母（如$x^a,e^{ax}$）,复杂因式如（$\ln x, \arcsin x$等）
 </font>
 
+---
+
 <div style='color: #2b73af'>
 
 【例1】$\lim \limits_{x \to 0} \frac{\sqrt{1+\tan x}-\sqrt{1+\sin x}}{x \sqrt{1+\sin ^{2} x}-x}\left(\frac{0}{0}\right)$
@@ -319,6 +321,8 @@ $=-\lim \limits_{t \to 0^+} \frac{\frac1t}{-\frac{1}{t^2}}=\lim \limits_{t \to 0
 
 </font>
 
+---
+
 <div style='color: #2b73af'>
 
 【例1】$\lim _{x \to 0}\left(\frac{e^{x}+x e^{x}}{e^{t}-1}-\frac{1}{x}\right)$
@@ -375,6 +379,8 @@ $=\frac{1}{2}$
 
 </font>
 
+---
+
 <div style='color: #2b73af'>
 
 【例1】$\lim \limits_{x \to +\infty}\left(x+\sqrt{1+x^{2}}\right)^{\frac{1}{x}}(\infty^0)$
@@ -419,6 +425,8 @@ $=e^{-\sqrt2}$
 
 </div>
 
+---
+
 #### （4）使用泰勒公式计算
 
 &emsp;任何可导函数$f(x)=\sum a_{n} x^{n}$（任何可导函数均可表示为幂函数的和的形式）
@@ -447,6 +455,9 @@ $=e^{-\sqrt2}$
 
 【例】$\lim \limits_{x \to 0} \frac{\arcsin x-\arctan x}{x^{3}}$
 
+<details>
+<summary style='color: red'>点击查看答案</summary>
+
 【解】
 
 原式
@@ -455,6 +466,8 @@ $=\lim \limits_{x \to 0} \frac{(x+\frac{1}{3!}x^3)-(x+\frac13 x^3)+o(x^3)}{x^3}$
 
 $=\frac16+\frac13=\frac12$
 
+</details><br>
+
 </div>
 
 &emsp;**B、见到$A-B$型，用幂次最低原则，即将$A,B$分别展开至系数不想等的$x$的最低次幂为止**
@@ -462,6 +475,9 @@ $=\frac16+\frac13=\frac12$
 <div style='color: #2b73af'>
 
 【例1】当$x \to 0$时，$\cos x-e^{-\frac{x^2}{2}}$与$cx^k$为等价无穷小，求$c,k$。
+
+<details>
+<summary style='color: red'>点击查看答案</summary>
 
 【分析】
 
@@ -483,9 +499,14 @@ $=-\frac{1}{12}x^4+o(x^4)$
 
 ∴ $c=-\frac{1}{12},k=4$
 
+</details>
+
 ---
 
 【例2】设$f(x)$在$x=0$的某领域内有定义，且$\lim \limits_{x \to 0} \frac{f(x) \tan x-\sin 4 x}{x^{3}}=0$，计算$\lim \limits_{x \to 0} \frac{f(x)-4}{x^{2}}$。
+
+<details>
+<summary style='color: red'>点击查看答案</summary>
 
 【分析】$f(x)$在$x=0$的某领域内有定义，表示仅有定义，不确定其是否可求导
 
@@ -501,6 +522,8 @@ $=\lim \limits_{x \to 0}\frac{\sin 4x -4 \tan x}{x^3}$<font style='color:#4d4d4d
 
 $=\lim \limits_{x \to 0}\frac{……}{x^3}=-12$<font style='color:#4d4d4d'>（可直接看3次幂的系数，求解即可）</font>
 
+</details>
+
 </div>
 
 ### 2. 数列极限的计算
@@ -509,11 +532,12 @@ $=\lim \limits_{x \to 0}\frac{……}{x^3}=-12$<font style='color:#4d4d4d'>（�
 
 依据：若$\lim \limits_{x \to +\infty} f(x)=A$，则$\lim \limits_{n \to \infty} f(n)=A$。
 
----
-
 <div style='color: #2b73af'>
 
-【例1】$\lim\limits_{n \to \infty}\left(n \cdot \tan \frac{1}{n}\right)^{n^{2}}$
+【例】$\lim\limits_{n \to \infty}\left(n \cdot \tan \frac{1}{n}\right)^{n^{2}}$
+
+<details>
+<summary style='color: red'>点击查看答案</summary>
 
 【解】
 
@@ -533,17 +557,22 @@ $=e^{\frac13}$
 
 由归结定理得，原式$=e^{\frac13}$
 
+</details>
+
 </div>
+
+---
 
 #### （2）若数列$\{x_n\}$不易于连续化时，用“夹逼定理”（或定积分定义）
 
 &emsp;**A、当分子分母同时变化时，只动分母，不动分子**
 
----
-
 <div style='color: #2b73af'>
 
-【例1】求$\lim _{n \rightarrow \infty}\left(\frac{1}{n^{2}+n+1}+\frac{2}{n^{2}+n+2}+\cdots+\frac{n}{n^{2}+n+n}\right)$
+【例】求$\lim _{n \rightarrow \infty}\left(\frac{1}{n^{2}+n+1}+\frac{2}{n^{2}+n+2}+\cdots+\frac{n}{n^{2}+n+n}\right)$
+
+<details>
+<summary style='color: red'>点击查看答案</summary>
 
 【分析】题中式子的通式为$\sum \limits_{i=1}^{n}\frac{i}{n^2+n+i}$（为分子分母同时变化）
 
@@ -557,15 +586,18 @@ $\sum \limits_{i=1}^{n}\frac{\frac{n(n+1)}{2}}{n^2+n+1}=\frac12$
 
 $\sum \limits_{i=1}^{n}\frac{i}{n^2+n+i}=\frac12$
 
+</details><br>
+
 </div>
 
 &emsp;**B、式中存在天生有界项时，利用该项的有界性**
 
----
-
 <div style='color: #2b73af'>
 
-【例1】$\lim \limits_{n \rightarrow \infty} \sqrt[n]{n \arctan n}$
+【例】$\lim \limits_{n \rightarrow \infty} \sqrt[n]{n \arctan n}$
+
+<details>
+<summary style='color: red'>点击查看答案</summary>
 
 【分析】式中，函数$\arctan x$的值域有界$(-\frac{\pi}2,\frac{\pi}2)$
 
@@ -583,15 +615,20 @@ $=e^{\lim \limits_{x \to \infty}\frac1x \ln x}=e^{\lim \limits_{x \to \infty}\fr
 
 ∴ 由夹逼定理得，原式=1
 
-</div>
+</details>
 
-#### （3）若数列$\{x_n\}$由递推公式$x_n=f(x_{n-1})$给出，则用“单调有界定理”
+</div>
 
 ---
 
+#### （3）若数列$\{x_n\}$由递推公式$x_n=f(x_{n-1})$给出，则用“单调有界定理”
+
 <div style='color: #2b73af'>
 
-【例1】设$x_{1}=1, x_{n+1}=1+\frac{x_{n}}{1+x_{n}}(n=1,2, \cdots)$，求$\lim \limits_{n \to \infty} x_{n}$。
+【例】设$x_{1}=1, x_{n+1}=1+\frac{x_{n}}{1+x_{n}}(n=1,2, \cdots)$，求$\lim \limits_{n \to \infty} x_{n}$。
+
+<details>
+<summary style='color: red'>点击查看答案</summary>
 
 【分析】先求证存在，再求极限！！！
 
@@ -618,7 +655,11 @@ $=\frac{x_n-x_{n-1}}{(1+x_n)(1+x_{n-1})}> 0$
 
 ∴ $\lim \limits_{n \to \infty} x_{n}=\frac{1+\sqrt5}{2}$
 
+</details>
+
 </div>
+
+---
 
 ## 四、应用————连续与间断
 
