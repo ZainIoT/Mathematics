@@ -14,11 +14,11 @@
 
 ### 1. 函数极限
 
-$\lim\limits_{x \to x_0}f(x)=A \Leftrightarrow \forall \varepsilon > 0, \exist \delta > 0$，当$0 < |x-x_0| < \delta$ 时，有 $|f(x)-A| < \varepsilon$。
+$\lim\limits_{x \to x_0}f(x)=A \Leftto \forall \varepsilon > 0, \exist \delta > 0$，当$0 < |x-x_0| < \delta$ 时，有 $|f(x)-A| < \varepsilon$。
 
 ### 2. 数列极限
 
-$\lim\limits_{x \to x_0}x_n=A \Leftrightarrow \forall \varepsilon > 0, \exist N > 0$，当$n > N$ 时，有 $|x_n-A| < \varepsilon$。
+$\lim\limits_{x \to x_0}x_n=A \Leftto \forall \varepsilon > 0, \exist N > 0$，当$n > N$ 时，有 $|x_n-A| < \varepsilon$。
 
 ---
 
@@ -211,9 +211,11 @@ $|f(X)| < M$
 
 &emsp;&emsp;$\lim \limits_{x \to 0}(1+x)^{\frac1x}=e$
 
-<font style='color:#cf455c; font-weight:bold'>对于A类未定式:
+#### （3）计算方法：
 
-1、（$\frac00$）见式先化简：
+<font style='color:#cf455c; font-weight:bold'>1、对于A类未定式:
+
+1）、（$\frac00$）见式先化简：
 
 &emsp;①恒等变形
 
@@ -227,24 +229,219 @@ $|f(X)| < M$
 
 &emsp;③及时提出极限不为0的因式
 
-2、（$\infty \cdot 0$）转化为（$\infty \cdot \frac{1}{\frac{1}{0}}$或$0 \cdot \frac{1}{\frac{1}{\infty}}$）
+2）、（$\infty \cdot 0$）转化为（$\infty \cdot \frac{1}{\frac{1}{0}}$或$0 \cdot \frac{1}{\frac{1}{\infty}}$）
 
 &emsp;&emsp;原则：将简单因式放在分母（如$x^a,e^{ax}$）,复杂因式如（$\ln x, \arcsin x$等）
 </font>
 
 <div style='color: #2b73af'>
 
-【例1】$\lim \limits_{x \rightarrow 0} \frac{\sqrt{1+\tan x}-\sqrt{1+\sin x}}{x \sqrt{1+\sin ^{2} x}-x}\left(\frac{0}{0}\right)$
-【解】$$原式=\lim \limits_{x \to 0} \frac{\tan x - \sin x}{x(\sqrt{1+\sin ^2x}-1)} \cdot \frac1{\sqrt{1+ \tan x}+\sqrt{1+\sin x}}$$
+【例1】$\lim \limits_{x \to 0} \frac{\sqrt{1+\tan x}-\sqrt{1+\sin x}}{x \sqrt{1+\sin ^{2} x}-x}\left(\frac{0}{0}\right)$
+
+【解】
+
+原式
+
+$=\lim \limits_{x \to 0} \frac{\tan x - \sin x}{x(\sqrt{1+\sin ^2x}-1)} \cdot \frac1{\sqrt{1+ \tan x}+\sqrt{1+\sin x}}$
+
+$=\frac12 \lim \limits_{x \to 0} \frac{\tan x - \sin x}{x(\sqrt{1+\sin ^2x}-1)}$<font style='color:#4d4d4d'>（$\lim \limits_{x \to 0}\frac1{\sqrt{1+ \tan x}+\sqrt{1+\sin x}}=\frac12$）</font>
+
+$=\frac12\lim \limits_{x \to 0}\frac{\tan x - \sin x}{x\cdot\frac12 \sin ^2x}$<font style='color:#4d4d4d'>（等价无穷小替换：$(1+t)^a-1 \sim at(t=\sin ^2x)$）</font>
+
+$=\lim \limits_{x \to 0} \frac{ \tan x(1-\cos x)}{x\sin ^2x}=\lim \limits_{x \to 0} \frac{x \cdot \frac12x^2}{x \cdot x^2}=\frac12$
+
+---
+
+【例2】$\lim \limits_{x \to 0} \frac{\mathrm{e}^{x^{2}}-\mathrm{e}^{2-2 \cos x}}{x^{4}}\left(\frac{0}{0}\right)$
+
+【解】
+
+原式
+
+$=\lim \limits_{x \to 0}\frac{e^{2-2\cos x}(e^{x^2-2+2\cos x}-1)}{x^4}$
+
+$=\lim \limits_{x \to 0}\frac{e^{2-2\cos x}(x^2-2+2\cos x)}{x^4}$
+
+$=\lim \limits_{x \to 0}\frac{x^2-2+2\cos x}{x^4}$
+
+$=\lim \limits_{x \to 0}\frac{2x-2\sin x}{4x^3}$
+
+$=\lim \limits_{x \to 0}\frac{2 \cdot \frac16 x^3}{4x^3}=\frac1{12}$
+
+---
+
+【例3】$\lim \limits_{x \to 1^{-}} \ln x \cdot \ln (1-x)$（$\infty \cdot 0$）
+
+【解】
+
+原式
+
+$=\lim \limits_{x \to 1^-} \ln (1+x-1) \cdot \ln (1-x)$<font style='color:#4d4d4d'>（等价无穷小$\ln(1+t) \sim t$）</font>
+
+$=\lim \limits_{x \to 1^-}(x-1) \ln (1-x)$
+
+令$t=1-x$，则
+
+原式
+
+$=\lim \limits_{t \to 0^+}-t \ln t$
+
+$=-\lim \limits_{t \to 0^+} \frac{\ln t}{\frac{1}{t}}$<font style='color:#4d4d4d'>（求导）</font>
+
+$=-\lim \limits_{t \to 0^+} \frac{\frac1t}{-\frac{1}{t^2}}=\lim \limits_{t \to 0^+}t=0$
 
 </div>
 
+---
 
+<font style='color:#cf455c; font-weight:bold'>2、对于B类未定式（$\infty-\infty$）:
 
+1）、有分母，则通分为$\frac00$ 或 $\frac\infty\infty$；
 
+2）、无分母，则创造分母（方法：令$x=\frac1t$）；
 
-&emsp;**数列极限存在的判别方法**
+然后使用洛必达、等价无穷小等方法继续运算。
 
-&emsp;&emsp;**单调有界定理**：单调增加（或单调减少）且有上界（或有下界）的数列$\{x_n\}$必有极限。
+</font>
 
-&emsp;&emsp;**夹逼定理**：
+<div style='color: #2b73af'>
+
+【例1】$\lim _{x \to 0}\left(\frac{e^{x}+x e^{x}}{e^{t}-1}-\frac{1}{x}\right)$
+
+【解】
+
+原式<font style='color:#4d4d4d'>（通分）</font>
+
+$=\lim \limits_{x \to 0} \frac{xe^{x}+x^{2} e^{x}-e^{x}+1}{x(e^{x}-1)} (\frac{0}{0})$<font style='color:#4d4d4d'>（等价无穷小替换：$e^{x}-1 \sim x$）</font>
+
+$=\lim \limits_{x \to 0} \frac{e^{x}(x^{2}+x-1)+1}{x\cdot x}$<font style='color:#4d4d4d'>（求导）</font>
+
+$=\lim \limits_{x \to 0} \frac{e^{x}(x^{2}+3 x)}{2 x}$<font style='color:#4d4d4d'>（求导）</font>
+
+$=\lim \limits_{x \to 0} \frac{e^{x}(x+3)}{2}$
+
+$=\frac{3}{2}$
+
+---
+
+【例2】$\lim \limits_{x \to +\infty}\left[x^{2}\left(\mathrm{e}^{\frac{1}{x}}-1\right)-x\right]$
+
+【解】令$x=\frac1t$，则
+
+原式
+
+$=\lim \limits_{t \to 0^+} \left[\frac{1}{t^{2}}\left(e^{t}-1\right)-\frac{1}{t}\right]$
+
+$=\lim \limits_{t \to 0^{+}} \frac{e^{t}-1-t}{t^{2}}$
+
+$=\lim \limits_{t \to 0^+} \frac{e^{t}-1}{2 t}$
+
+$=\frac{1}{2}$
+
+</div>
+
+---
+
+<font style='color:#cf455c; font-weight:bold'>3、对于C类未定式（$\infty^0，0^0,1^\infty$）:
+
+使用公式：$U(x)^{V(x)}=e^{V(x) \cdot \ln U(x)}$
+
+※ 当为$1^\infty$时：使用公式（$\lim U^V=e^{\lim V\cdot(U-1)}$）
+
+</font>
+
+<div style='color: #2b73af'>
+
+【例1】$\lim \limits_{x \to +\infty}\left(x+\sqrt{1+x^{2}}\right)^{\frac{1}{x}}(\infty^0)$
+
+【解】
+
+原式
+
+$=\lim \limits_{x \to +\infty} e^{\frac{\ln(x+\sqrt{1+x^{2}})}{x}}$<font style='color:#4d4d4d'>（求导:$(\frac{\ln(x+\sqrt{1+x^{2}})}{x})'=\frac{1}{\sqrt{1+x^{2}}}$）</font>
+
+$=e^{\lim \limits_{x \to +\infty} \frac{1}{\sqrt{1+x^{2}}}}$<font style='color:#4d4d4d'>（求导）</font>
+
+$=e^0$
+
+$=1$
+
+---
+
+【例2】$\lim \limits_{x \to \frac{\pi}{4}}(\tan x)^{\frac{1}{\cos x-\sin x}}\left(1^{\infty}\right)$
+
+【解】使用公式（$\lim U^V=e^{\lim V\cdot(U-1)}$）
+
+原式
+
+$=e^{\lim \limits_{x \to \frac{\pi}{4}} {\frac{1}{\cos x-\sin x}}\cdot(\tan x-1)}$
+
+$=e^{\lim \limits_{x \to \frac{\pi}{4}} {\frac{\tan x-1}{-\cos x(\tan x-1)}}}$
+
+$=e^{\lim \limits_{x \to \frac{\pi}{4}} {\frac{1}{-\cos x}}}$
+
+$=e^{-\sqrt2}$
+
+</div>
+
+### 2. 数列极限的计算
+
+#### （1）若数列$\{x_n\}$易于连续化，则可转为函数极限计算
+
+依据：若$\lim \limits_{x \to +\infty} f(x)=A$，则$\lim \limits_{n \to \infty} f(n)=A$。
+
+---
+
+<div style='color: #2b73af'>
+
+【例1】$\lim\limits_{n \to \infty}\left(n \cdot \tan \frac{1}{n}\right)^{n^{2}}$
+
+【解】
+
+∵ $\lim\limits_{x \to +\infty}\left(x \cdot \tan \frac{1}{x}\right)^{x^{2}}(1^\infty)$
+
+$=e^{\lim \limits_{x \to +\infty}x^2(x \tan \frac1x -1)}$
+
+令$x=\frac1t$，则
+
+$=e^{\lim \limits_{t \to 0^+}\frac1{t^2}(\frac1t \tan t-1)}$
+
+$=e^{\lim \limits_{t \to 0^+}\frac1{t^2}\frac{\tan t-t}{t}}$<font style='color:#4d4d4d'>（等价无穷小替换：$\tan t-t \sim \frac13 t^3$）</font>
+
+$=e^{\lim \limits_{t \to 0^+}\frac{\frac13 t^3}{t^3}}$
+
+$=e^{\frac13}$
+
+由归结定理得，原式$=e^{\frac13}$
+
+</div>
+
+#### （2）若数列$\{x_n\}$不易于连续化时，用“夹逼定理”（或定积分定义）
+
+&emsp;**A、当分子分母同时变化时，只动分母，不动分子**
+
+---
+
+<div style='color: #2b73af'>
+
+【例1】求$\lim _{n \rightarrow \infty}\left(\frac{1}{n^{2}+n+1}+\frac{2}{n^{2}+n+2}+\cdots+\frac{n}{n^{2}+n+n}\right)$
+
+【解】
+
+∵ $\lim\limits_{x \to +\infty}\left(x \cdot \tan \frac{1}{x}\right)^{x^{2}}(1^\infty)$
+
+$=e^{\lim \limits_{x \to +\infty}x^2(x \tan \frac1x -1)}$
+
+令$x=\frac1t$，则
+
+$=e^{\lim \limits_{t \to 0^+}\frac1{t^2}(\frac1t \tan t-1)}$
+
+$=e^{\lim \limits_{t \to 0^+}\frac1{t^2}\frac{\tan t-t}{t}}$<font style='color:#4d4d4d'>（等价无穷小替换：$\tan t-t \sim \frac13 t^3$）</font>
+
+$=e^{\lim \limits_{t \to 0^+}\frac{\frac13 t^3}{t^3}}$
+
+$=e^{\frac13}$
+
+由归结定理得，原式$=e^{\frac13}$
+
+</div>
