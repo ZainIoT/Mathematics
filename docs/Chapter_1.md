@@ -14,11 +14,11 @@
 
 ### 1. 函数极限
 
-$\lim\limits_{x \to x_0}f(x)=A \Leftto \forall \varepsilon > 0, \exist \delta > 0$，当$0 < |x-x_0| < \delta$ 时，有 $|f(x)-A| < \varepsilon$。
+$\lim \limits_{x \to x_0}f(x)=A, \forall \varepsilon > 0, \exist \delta > 0$，当$0 < |x-x_0| < \delta$ 时，有 $|f(x)-A| < \varepsilon$。
 
 ### 2. 数列极限
 
-$\lim\limits_{x \to x_0}x_n=A \Leftto \forall \varepsilon > 0, \exist N > 0$，当$n > N$ 时，有 $|x_n-A| < \varepsilon$。
+$\lim\limits_{x \to x_0}x_n=A,\forall \varepsilon > 0, \exist N > 0$，当$n > N$ 时，有 $|x_n-A| < \varepsilon$。
 
 ---
 
@@ -121,11 +121,11 @@ $|f(X)| < M$
 
 【分析】对每个答案区间的左端点的+、右端点的-极限进行判断，若存在、且区间内函数连续，则为所求答案。
 
-<font style='color: #cf455c'>【求解方法】</font>讨论$f(x)$在指定区间$I$上的有界性，方法如下：
+<font style='color: #cf455c'>【求解方法】</font> **讨论$f(x)$在指定区间$I$上的有界性，方法如下**：
 
-①理论：连续函数在闭区间内必有界；
+①**理论**：连续函数在闭区间内必有界；
 
-②若$I$为$(a,b)$，则当一下三个条件均成立时，$f(x)$有界
+②**若$I$为$(a,b)$，则当一下三个条件均成立时，$f(x)$有界**
 
 &emsp;A.$\lim \limits_{x \to a^+}f(x)$存在；
 
@@ -238,6 +238,9 @@ $|f(X)| < M$
 
 【例1】$\lim \limits_{x \to 0} \frac{\sqrt{1+\tan x}-\sqrt{1+\sin x}}{x \sqrt{1+\sin ^{2} x}-x}\left(\frac{0}{0}\right)$
 
+<details>
+<summary style='color: red'>点击查看答案</summary>
+
 【解】
 
 原式
@@ -250,9 +253,14 @@ $=\frac12\lim \limits_{x \to 0}\frac{\tan x - \sin x}{x\cdot\frac12 \sin ^2x}$<f
 
 $=\lim \limits_{x \to 0} \frac{ \tan x(1-\cos x)}{x\sin ^2x}=\lim \limits_{x \to 0} \frac{x \cdot \frac12x^2}{x \cdot x^2}=\frac12$
 
+</details>
+
 ---
 
 【例2】$\lim \limits_{x \to 0} \frac{\mathrm{e}^{x^{2}}-\mathrm{e}^{2-2 \cos x}}{x^{4}}\left(\frac{0}{0}\right)$
+
+<details>
+<summary style='color: red'>点击查看答案</summary>
 
 【解】
 
@@ -268,9 +276,14 @@ $=\lim \limits_{x \to 0}\frac{2x-2\sin x}{4x^3}$
 
 $=\lim \limits_{x \to 0}\frac{2 \cdot \frac16 x^3}{4x^3}=\frac1{12}$
 
+</details>
+
 ---
 
 【例3】$\lim \limits_{x \to 1^{-}} \ln x \cdot \ln (1-x)$（$\infty \cdot 0$）
+
+<details>
+<summary style='color: red'>点击查看答案</summary>
 
 【解】
 
@@ -290,6 +303,8 @@ $=-\lim \limits_{t \to 0^+} \frac{\ln t}{\frac{1}{t}}$<font style='color:#4d4d4d
 
 $=-\lim \limits_{t \to 0^+} \frac{\frac1t}{-\frac{1}{t^2}}=\lim \limits_{t \to 0^+}t=0$
 
+</details>
+
 </div>
 
 ---
@@ -308,6 +323,9 @@ $=-\lim \limits_{t \to 0^+} \frac{\frac1t}{-\frac{1}{t^2}}=\lim \limits_{t \to 0
 
 【例1】$\lim _{x \to 0}\left(\frac{e^{x}+x e^{x}}{e^{t}-1}-\frac{1}{x}\right)$
 
+<details>
+<summary style='color: red'>点击查看答案</summary>
+
 【解】
 
 原式<font style='color:#4d4d4d'>（通分）</font>
@@ -322,9 +340,14 @@ $=\lim \limits_{x \to 0} \frac{e^{x}(x+3)}{2}$
 
 $=\frac{3}{2}$
 
+</details>
+
 ---
 
 【例2】$\lim \limits_{x \to +\infty}\left[x^{2}\left(\mathrm{e}^{\frac{1}{x}}-1\right)-x\right]$
+
+<details>
+<summary style='color: red'>点击查看答案</summary>
 
 【解】令$x=\frac1t$，则
 
@@ -337,6 +360,8 @@ $=\lim \limits_{t \to 0^{+}} \frac{e^{t}-1-t}{t^{2}}$
 $=\lim \limits_{t \to 0^+} \frac{e^{t}-1}{2 t}$
 
 $=\frac{1}{2}$
+
+</details>
 
 </div>
 
@@ -354,6 +379,9 @@ $=\frac{1}{2}$
 
 【例1】$\lim \limits_{x \to +\infty}\left(x+\sqrt{1+x^{2}}\right)^{\frac{1}{x}}(\infty^0)$
 
+<details>
+<summary style='color: red'>点击查看答案</summary>
+
 【解】
 
 原式
@@ -366,9 +394,14 @@ $=e^0$
 
 $=1$
 
+</details>
+
 ---
 
 【例2】$\lim \limits_{x \to \frac{\pi}{4}}(\tan x)^{\frac{1}{\cos x-\sin x}}\left(1^{\infty}\right)$
+
+<details>
+<summary style='color: red'>点击查看答案</summary>
 
 【解】使用公式（$\lim U^V=e^{\lim V\cdot(U-1)}$）
 
@@ -381,6 +414,8 @@ $=e^{\lim \limits_{x \to \frac{\pi}{4}} {\frac{\tan x-1}{-\cos x(\tan x-1)}}}$
 $=e^{\lim \limits_{x \to \frac{\pi}{4}} {\frac{1}{-\cos x}}}$
 
 $=e^{-\sqrt2}$
+
+</details>
 
 </div>
 
