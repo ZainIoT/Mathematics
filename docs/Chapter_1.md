@@ -223,11 +223,12 @@ $|f(X)| < M$
 &emsp;&emsp;原则：将简单因式放在分母（如$x^a,e^{ax}$）,复杂因式如（$\ln x, \arcsin x$等）
 </font>**
 
+<div style='color: #2b73af'>
+
 【例1】$\lim \limits_{x \rightarrow 0} \frac{\sqrt{1+\tan x}-\sqrt{1+\sin x}}{x \sqrt{1+\sin ^{2} x}-x}\left(\frac{0}{0}\right)$
+【解】$$原式=\lim \limits_{x \to 0} \frac{\tan x - \sin x}{x(\sqrt{1+\sin ^2x}-1)} \cdot \frac1{\sqrt{1+ \tan x}+\sqrt{1+\sin x}}$$
 
-
-
-<font style='color: #cf455c'>【方法】</font>
+</div>
 
 
 
